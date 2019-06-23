@@ -1,0 +1,6 @@
+task:
+  ec2_instance:
+    image: ami-0a01a5636f3c4f21c
+    type: t2.micro
+    region: us-east-1
+  script: uname -a
