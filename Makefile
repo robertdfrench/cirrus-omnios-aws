@@ -16,7 +16,8 @@ $(plugins): providers.tf
 	terraform init
 	@touch $@
 
-.PHONY: image
-image:
-	$(MAKE) -C image ami.json
-	cp image/ami.json ami.auto.tfvars.json
+image: validate
+	packer build packer.json
+
+validate: 
+	packer validate packer.json

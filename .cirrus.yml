@@ -2,7 +2,7 @@ aws_credentials: ENCRYPTED[7ce29a47f648b0c6da1d9aa44ceb7bcab6496230e91b4ad6c8b5c
 
 task:
   ec2_instance:
-    image: ami-0a01a5636f3c4f21c
+    image: ami-01b78fa73fc55ff20
     type: t2.micro
     region: us-east-1
   script: uname -a

@@ -1,7 +1,0 @@
-{
-  "ami": {
-    "sensitive": false,
-    "type": "string",
-    "value": "ami-05aefff5c3d75c6ce"
-  }
-}
