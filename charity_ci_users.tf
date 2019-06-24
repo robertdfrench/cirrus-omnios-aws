@@ -23,3 +23,14 @@ resource "aws_iam_user_group_membership" "robertdfrench" {
   user   = aws_iam_user.robertdfrench.name
   groups = [aws_iam_group.charity_ci_users.name]
 }
+
+resource "aws_iam_access_key" "robertdfrench" {
+  user = aws_iam_user.robertdfrench.id
+}
+
+output "robertdfrench" {
+  value = {
+    id     = aws_iam_access_key.robertdfrench.id
+    secret = aws_iam_access_key.robertdfrench.secret
+  }
+}

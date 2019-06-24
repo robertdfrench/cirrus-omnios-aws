@@ -1,3 +1,5 @@
+aws_credentials: ENCRYPTED[7ce29a47f648b0c6da1d9aa44ceb7bcab6496230e91b4ad6c8b5cb0b875bc373caab617e7e38d9468888ac572d7dba65]
+
 task:
   ec2_instance:
     image: ami-0a01a5636f3c4f21c
