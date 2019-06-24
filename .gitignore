@@ -2,3 +2,4 @@
 *.swp
 terraform.tfstate.backup
 terraform.tfstate
+ami.auto.tfvars.json
